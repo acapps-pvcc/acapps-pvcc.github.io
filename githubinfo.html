@@ -1,0 +1,137 @@
+<!DOCTYPE html> <!-- It declars the document type as HTML 5-->
+<html lang="en"> <!-- This line specifies that the primary language of the document's content is english -->
+<head>
+    <title>All About GitHub</title> <!-- Defines the title of an HTML document, this title is displayed in the browser's tab-->
+    <style>
+
+        body {
+            border: 2px dotted rgb(228, 144, 71); /* This line is used to create a border frame for the body section.*/
+            background-color: #d4d5cc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large; /* This is used to adjust text size for the body*/
+            color: #0f0d0d; /* Sets the color for the text*/
+            padding: 10px;
+        }
+
+        h1, h2, h3 {
+            color: #2C3E50; /* Sets the color for the heading*/
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        li {
+            margin-bottom: 15px; /* Add spaces below each unordered list.*/
+        }
+
+        .answer {
+            display: block; /* A display property that makes the answer span behave like a block element.*/
+            margin-top: 10px; /* Adds space above the answer to separate the answer text from the question .*/
+        }
+
+        img {
+            width: 450px; /* Sets the ppicture width to 450 pixels*/
+        }
+
+        .letter_label {
+            color: #e1619f; /* Sets color for the answer(A) label.*/
+            font-weight: bold; /* Make the answer(A) label bold text.*/
+            margin-right: 8px; /* Adds space to the right for the lable "A".*/
+        }
+
+    </style>
+</head>
+
+<body> <!-- Start the page content-->
+    
+    <h1>All About GitHub</h1> <!-- Main heading, and it defines the most important heading-->
+
+    <ul>
+        <li><strong>Q. What is a version control system?</strong>
+            <span class="answer">
+                <span class="letter_label">A.</span> A Version Control System (VCS) is a tool used in software development and collaborative projects to track and manage changes to source code.
+            </span>
+        </li>
+         
+        <li><strong>Q. What is Git?</strong>
+            <span class="answer">
+                <span class="letter_label">A.</span> Git is a tool used to keep track of changes to files, especially the code in projects. 
+            It is termed a distributed version control system because of its behavior to allow multiple people to work on the same project, even if they are not connected to a common server.
+            </span>
+        </li>
+
+        <li><strong>Q. What is GitHub?</strong>
+            <span class="answer">
+                <span class="letter_label">A.</span> GitHub is a web-based platform that hosts Git repositories, providing  developers with tools to create, store, manage, collaborate, and share their code. 
+            It leverages Git, an open-source version control system created by Linus Torvalds, to facilitate distributed version control, access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.
+            </span>
+        </li>
+
+        <li><strong>Q. What is the difference between Git and GitHub?</strong>
+            <span class="answer">
+                <span class="letter_label">A.</span> The difference between Git and GitHub is that Git is software designed to track changes in source code. 
+            It operates locally on the system, it is a command-line tool and does not require an internet connection. Also, Git is maintained by Linux and is focused on version control and code sharing. 
+            GitHub, on the other hand, is a cloud-based platform that is a hosting service for Git repositories, which features a graphical user interface; requires an internet connection and is maintained by Microsoft.
+            </span>
+        </li>
+
+       <li><strong>Q. Who started GitHub and how was it started?</strong>
+            <span class="answer">
+                <span class="letter_label">A.</span> GitHub was started by Tom Preston-Werner, Chris Wanstrath, P. J. Hyett, and Scott Chacon. GitHub started from the need for a more collaborative and user-friendly platform built on top of Git, the distributed version control system created by Linus Torvalds.
+            </span>
+       </li>
+
+       <li><strong>Q. What company owns it now?</strong>
+            <span class="answer">
+                <span class="letter_label">A.</span> GitHub is now owned by Microsoft.
+            </span>
+
+       </li>
+    
+       <li><strong>Q. How much does a GitHub account cost?</strong>
+             <span class="answer">
+                <span class="letter_label">A.</span> A GitHub account is free for individuals and organizations, the team plan costs $4 per user/month and includes advanced collaboration features.
+           The enterprise plan costs $21 per user/month that includes security, compliance, and flexible deployment.
+             </span>
+       </li>
+
+       <li><strong>Q. What is the Octocat?</strong>
+             <span class="answer">
+                <span class="letter_label">A.</span> Octocat is GitHub's official mascot, a playful and iconic figure that has become synonymous with the platform. It represents developers and symbolizes innovation, collaboration, 
+           and the spirit of the tech industry.
+             </span>
+       </li>
+    </ul><hr> <!-- A horizontal line separate sections-->
+
+
+    <h2>Git/GitHub terms:</h2>
+
+    <ul>
+        <li><strong>repository:</strong> This is a central location where developers store, manage, and collaborate on their code and related files.</li>
+        
+        <li><strong>commit:</strong> It represents a saved snapshot of changes to a repository. It's a fundamental unit of version control, acting as a historical record of modifications made to a project's files.</li>
+        
+        <li><strong>fork:</strong> It gives people the ability to create a personal copy of someone else's project under your GitHub account. 
+            Forking a repository allows you to freely experiment with changes without affecting the original project.</li>
+        
+        <li><strong>push:</strong> A command that allows us to transfer files from the local repository to the remote repository. This process essentially uploads your local work to a centralized location, such as a repository hosted on GitHub.</li>
+        
+        <li><strong>pull requests:</strong> A pull request (PR) is a mechanism in GitHub feature that allows developers to propose changes from one branch to another, enabling collaboration, code review, and discussion before merging changes into the main branch.</li>
+        
+        <li><strong>workflows:</strong> It is a configurable automated process that will run one or more jobs. Workflows are defined by a YAML file checked in to your repository and will run when triggered by an event in your repository, 
+            or they can be triggered manually, or at a defined schedule.</li>
+        
+        <li><strong>issues:</strong> A feature provided by GitHub to help developers and teams track tasks, bugs, feature requests, or any work related to a project. 
+            It serves as a centralized system for managing and organizing project-related discussions and progress.</li>
+       
+        <li><strong>raw button:</strong> When viewing a specific file within a repository, it provides access to the unprocessed, unstyled content of that file.</li>
+
+        <li><strong>blame button:</strong> This command helps developers identify who made specific changes to a file. It annotates each line in a file with information about the last commit that modified the line, including the commit hash,
+             the author, the date of the change, and optionally, the line number.</li>
+    </ul><hr>
+
+    <h2>A image of Octocat</h2> <!-- A second level or subheading used for decribe the image type-->
+
+    <img src="octocat.jpg" alt="The Saritocat image, by Joao Ribeiro, The Octocat—a nerdy household name"> <!-- This line is sets to display the photo, and give the original creator credit.-->
+
+</body>
+</html>
+
