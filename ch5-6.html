@@ -1,0 +1,281 @@
+<!DOCTYPE html> <!-- It declars the document type as HTML 5-->
+<html lang="en"> <!-- This line specifies that the primary language of the document's content is english -->
+<head>
+    <title>Chapter 5 & 6 Terms</title> <!-- Defines the title of an HTML document, this title is displayed in the browser's tab-->
+    <style>
+
+        body {
+            background-color: rgb(241, 236, 234); /* Set the body background color for the entire page. */
+        }
+        table, th,td { /* Apply the style for tables, headers, table data or cells.*/
+            border: 2px solid rgb(15, 16, 15); 
+            text-align: left;
+            width: 1000px;
+            background-color: rgb(230, 209, 225);
+            margin-left: 10%;
+            padding: 5px;
+            font-family: cursive;
+            font-size: large;
+        }
+        th {
+            background-color: rgb(179, 237, 188); /* Sets the background color light green for table heand */
+        }
+        
+        h2 {
+            margin-left: 10%; 
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+        
+    </style> 
+</head>
+
+<body> <!-- Start the page content-->
+
+<table>
+    <tr>
+        <th><h1>Chapter 5: Computer Systems Organization</h1></th>
+    </tr>
+
+    <tr>
+        <th>Student: Amanda Capps</th>
+    </tr>
+
+    <tr>
+        <th>Von Neumann computer architecture, 4 major subsystems:</th>
+    </tr>
+
+    <tr>
+        <td>
+            <ol>
+                <li>memory</li>
+                <li>input/output</li>
+                <li>arithmetic/logic unit (ALU)</li>
+                <li>central processing unit(CPU)</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
+        <th>Von Neumann computer architecture, 3 characteristics:</th>
+    </tr>
+
+    <tr>
+        <td>
+            <ol>
+                <li>The ALU and the control unit are often bundled together in what is called the central processing unit or CPU.</li>
+                <li>The stored program concept, in which the instructions to be executed by 
+                    the computer are represented as binary values and stored in memory.</li>
+                <li>The sequential execution of instructions, in which one instruction at a time is fetched from memory and passed to the control unit, where it is decoded and executed.</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
+        <th>Computer Architecture Terms</th>
+    </tr>
+
+    <tr>
+        <td>
+            <ol>
+                <li><strong>RAM:</strong> This defines Computer memory uses an access technique called random access memory. This is a type of volatile memory that causes the information to disappear when the power is turned off. 
+                    Without some type of long-term, nonvolatile memory, information could not be saved between shutdowns of the machine. </li>
+
+                <li><strong>cache:</strong> A temporary high-speed memory unit that keeps a copy of memory cells are likely to be used again in the near future.</li>
+
+                <li><strong>Principle of locality: The high likelihood that when a program fetches a piece of data or an instruction:</strong></li>
+            <ol>
+                <li>It will access that same instruction or piece of data in the very near future.</li>
+                <li>It will soon access the instructions or data that are located near that piece of data, where “near” means an address whose numerical value is close to this one.</li>
+            </ol>
+                <li><strong>ROM:</strong> Read-only memory (ROM) is a type of non-volatile memory that stores data permanently. This information has been prerecorded during manufacture, 
+                    which cannot be modified or removed, only fetched. ROM is used to hold important system instructions and data in a place where a user cannot accidentally or intentionally overwrite them.</li>
+
+                <li><strong>memory cell size:</strong> The memory unit is made up of cells that contain a fixed number of binary digits, typically 8-bits per cell or 1 byte.</li>
+
+                <li><strong>memory cell address:</strong>  Each memory cell is associated with units of unique identifier, which allowing the CPU to locate and accesses data stored at a specific location.</li>  
+
+                <li><strong>register:</strong> This is a special high-speed storage cell that holds the operands of an arithmetic operation and that, when the operation is complete, holds its result.</li>
+
+                <li><strong>fetch:</strong> This is process to retrieving or get data from memory and passing them to the control unit for decoding and execution.</li>    
+
+                <li><strong>store:</strong> A process of saving data information in a storage or memory for future use.</li>   
+
+                <li><strong>memory access time:</strong> This defined the time it takes for the computer's processors to carry out either a fetch or a store operation.</li>
+
+                <li><strong>DASD:</strong> A direct access storage devices is refers to a mass storage devices in which every memory cell has a unique address, and it allows data to be accesses directly by its address, rather than sequentially.</li> 
+
+                <li><strong>Arithmetic and Logic Unit (ALU):</strong> This is the subsystem that performs such mathematical and logical operations as addition, subtraction, and comparison for equality.</li> 
+
+                <li><strong>Control Unit:</strong> This is a component of the computer's central processing unit, which fetch from memory the next instruction to be executed, 
+                    decode it, and execute it by issuing the appropriate command to 
+                    the ALU, memory, or I/O controllers.</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th><h1>Chapter 6:</h1></th>
+    </tr>
+
+    <tr>
+        <th>Four things the interface between the computer and the hardware does:</th>
+    </tr>
+    
+    <tr>
+        <td>
+            <ol>
+                <li>Hides from the user the messy details of the underlying hardware</li>
+                <li>Presents information about what is happening in a way that does not require in-depth knowledge of the internal structure of the system</li>
+                <li>Allows easy user access to the resources available on this computer</li>
+                <li>Prevents accidental or intentional damage to hardware, programs, and data</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>Responsibilities of systems software: </th>
+    </tr>
+    
+    <tr>
+        <td>
+            <ol>
+                <li>Hides the complex and unimportant (to the user) details of the internal structure of the Von Neumann architecture</li>
+                <li>Presents important information to the user in a way that is easy to understand</li>
+                <li>Allows the user to access machine resources in a simple and efficient way</li>
+                <li>Provides a secure and safe environment in which to operate</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>Terms</th>
+    </tr>
+
+    <tr>
+        <td>
+            <ol>
+                <li><strong>Systems software:</strong> Is a collection of computer programs that manage the resources of a computer and facilitates access to those resources. This contrasts with application software that allows a user to address some specialized task of interest to that user, 
+                    for example, write a document, create an image, browse the web, or solve a system of equations.</li>      
+
+                <li><strong>user interface:</strong> A modern operating systems with a graphical user interface (GUI) that gives the user an intuitive visual overview as well as graphical control of the capabilities and services of the computer. 
+                    Control of the GUI is typically done with keystrokes, mouse clicks, finger taps, voice activation, or biometric scans such as fingerprints.</li>
+
+                <li><strong>language services:</strong> This is called assemblers, compilers, and interpreters, allow you to write programs in a high-level, user-oriented language rather than the machine language and to execute these programs easily and efficiently. 
+                    They often include components such as text editors and debuggers.</li>
+
+                <li><strong>memory managers:</strong> These programs allocate memory space for programs and data and retrieve this memory space when it is no longer needed.</li>
+
+                <li><strong>i/o managers:</strong> These software packages allow you to easily and efficiently use the many different types of input and output devices that 
+                    exist on a modern computer system.</li>
+
+                <li><strong>scheduler:</strong> This system program keeps a list of programs ready to run on the processor, and it selects the one that will execute next. The scheduler 
+                    allows you to have several different programs active at a single time, for instance, surfing the web while you are waiting for a file to finish printing.</li>
+                    
+                <li><strong>assembly language:</strong> These were termed second-generation languages to distinguish them from machine languages, which were viewed as first-generation languages.</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>Functions of an Operating system</th>
+    </tr>
+    
+    <tr>
+        <td>
+            <ol>
+                <li>User interface management (a receptionist)</li>
+                <li>Control of access to the system and to data files (a security guard)</li>
+                <li>Program scheduling and activation (a dispatcher)</li>
+                <li>Efficient resource allocation (an efficiency expert)</li>
+                <li>Deadlock detection and error detection (a traffic officer)</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+
+<h2>Powers of 10 Table</h2>
+
+<table>
+    <tr>
+        <th>Quantity in Bytes</th>
+        <th>Base-10 Value</th> 
+        <th>Amount of Textual Information</th>
+    </tr>
+
+    <tr>
+        <td>1 byte</td>
+        <td>10^0</td>
+        <td>One character</td>
+    </tr>
+
+    <tr>
+        <td>1 kilobyte</td>
+        <td>10^3</td>
+        <td>One	typed page</td>
+    </tr>
+
+    <tr>
+        <td>1 megabyte</td>
+        <td>10^6</td>
+        <td>Two or	three novels</td>
+    </tr>
+
+    <tr>
+        <td>1 gigabyte</td>
+        <td>10^9</td>
+        <td>A departmental library or a	large personal library</td>
+    </tr>
+
+    <tr>
+        <td>1 terabyte</td>
+        <td>10^12</td>
+        <td>The	library	of a major academic	research university</td>
+    </tr>
+
+    <tr>
+        <td>1 petabyte</td>
+        <td>10^15</td>
+        <td>All printed material in all libraries in North America</td>
+    </tr>
+
+    <tr>
+        <td>1 exabyte</td>
+        <td>10^18</td>
+        <td> All words ever	printed	throughout human history</td>
+    </tr>
+
+    <tr>
+        <td>1 zettabyte</td>
+        <td>10^21</td>
+        <td>As	of	2014, the total	amount of information stored globally on the World Wide Web	was	about 4–5 zettabytes</td>
+    </tr>
+
+    <tr>
+        <td>1 yottabyte</td>
+        <td>10^24</td>
+        <td> According to an article in	Gizmodo,1 a design and	technology blog, storing 1 yottabyte of	data on	hard drives	would require 1	million	data centers	
+             that would	fill the states	of Rhode Island	and	Delaware</td>
+    </tr>
+</table>
+
+</body> 
+</html>
+
