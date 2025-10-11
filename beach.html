@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Name: Amanda Capps
+        DESCRIPION: This code will find the cost of a beach cottage rental.-->
+<head>
+    <title> Summer Breeze Beach Cottage Rentals</title>
+
+<script type = "text/javascript">
+    function beachrental(){
+        
+        //rates variables
+        var pricepernight = 250.00;
+        var salestaxrate = 0.08;
+        var occtaxrate = .12;
+        var howtopay = "\n\nCredit and debit cards accepted for beach cottage rentals.";
+
+        //data variables 
+        var numnights = 0;
+        var rentalcost = 0;
+        var salestaxamt = 0;
+        var occtaxamt = 0;
+        var total = 0;
+
+        //calculations
+        numnights = prompt("Enter the number of nights you would like to rent a \nSUMMER BREEZE beach cottage: ");
+        rentalcost = numnights * pricepernight;
+        salestaxamt = rentalcost * salestaxrate;
+        occtaxamt = rentalcost * occtaxrate;
+        total = rentalcost + salestaxamt + occtaxamt;
+
+        alert("\nSUMMER BREEZE BEACH COTTAGES" +
+              "\n----------------------------------------" +
+              "\nNumber of nights: " + numnights +
+              "\n----------------------------------------" +
+              "\nRental cost: $" + rentalcost +
+              "\nSales tax: $" + salestaxamt +
+              "\nOccupancy tax: $" + occtaxamt +
+              "\n----------------------------------------" +
+              "\nTotal: $" + total + howtopay);
+        document.write("<h1>Total:" +total + "</h1>");
+    }
+
+</script>
+</head>
+
+<body style = "color:#117cad; background-color: #f2ebd0;
+            font-family: verdana, arial, sans-serif; font-size: 15px;">
+  
+    <h1>SUMMER BREEZE BEACH COTTAGES</h1>
+    <h3>Enjoy a beautiful, relaxing holiday in one of our cottages!
+    <br />Call us at 800.457.9876 for reservations.</h3>
+
+    <form>
+        <input type ="button" value = "Click to calculate beach cottage rental cost" class="button"
+         onclick ="beachrental()" />
+    </form>
+
+    <br /><br/>
+    <img src="cottage.jpg" />
+</body>
+</html>
