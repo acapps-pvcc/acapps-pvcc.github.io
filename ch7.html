@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chapter 7 Terms</title> 
+    <style>
+
+        body {
+            background-color: lightgray;
+        }
+        table, th, td {
+            border: 2px solid rgb(15, 16, 15); 
+            text-align: left;
+            width: 1000px;
+            background-color: rgb(241, 182, 210);
+            margin-left: 10%;
+        }
+
+       th {
+            background-color: rgb(239, 239, 79);
+        }
+
+       tr {
+           font-family: 'Courier New', Courier, monospace;
+           font-size: large;
+        }
+        
+        h2 {
+            margin-left: 10%;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+         img {
+            margin-left: 10%;
+        }
+
+    </style>
+</head>
+
+<body>
+<table>
+    <tr>
+        <th><h1>Chapter 7: Computer Networks & Cloud Computing</h1></th>
+    </tr>
+
+    <tr>
+        <th>Student: Amanda Capps</th>
+    </tr>
+
+    <tr>
+        <th>Briefly describe or define:</th>
+    </tr>
+
+    <tr>
+        <td>
+            <ol>
+                <li><strong>computer network:</strong> This is a set of independent computer systems interconnected by telecommunication links for the purpose of sharing information and resources.</li>
+
+                <li><strong>analog device (define and give an example):</strong>  Is one in which the physical quantity used to represent information, such as voltage level that is continuous and can take on any value. An example of analog device is voice-oriented dial-up telephone network, this transmits human voice using continuously varying signals.</li>
+
+                <li><strong>digital device (define and give an example):</strong> A device that produces digital information using discrete values, typically representing a sequence of 0s and 1s. An example of digital device is telecommunications system.</li>
+
+                <li><strong>modem:</strong> The modem modifies the physical characteristics of the carrier wave, such as amplitude or frequency to encode the digital data. This process uses  one of two distinct states-one state representing 0 and the other state representing 1. 
+                            It then takes the received waveform, separates the carrier wave from the encoded digital signal, and passes on the digital data to the computer.</li>
+
+                <li><strong>bandwidth:</strong> It refers to the maximum rate at which information can be sent and received within a specified time limit. It is measured in bits per second (bps) and the higher the bandwidth means the more capacity for transmitting data.</li>
+
+                <li><strong>ethernet:</strong> A wired local area network (LAN) technology that uses cables to connect devices like computers and routers within a local area such as the homes, office building, or campuses.</li>
+
+                <li><strong>WLAN:</strong> This stands for wireless local area network, is a short-distance form of wireless networking that allows devices such as computer, tablet, or smartphone being connected to a local wireless base station, often referred to as a wireless router, access point, 
+                            or hot spot, that located no more than a few hundred feet away. This base station is then connected traditional wired network, such as a DSL or cable modem, to provide full Internet access. </li>
+                            
+                <li><strong>IEEE 802.11 wireless network standard:</strong> It is the official name for Wi-Fi. It refers to a wireless network that connects devices like computers to the internet within a typica range of 150–300 feet or 45–90 meters from a wireless base station such as hotspot. 
+                            It generally use the 2.4 GHz radio band, with transmission speeds of about 10–50 Mbps.</li>
+
+                <li><strong>MAN</strong> Stands for metropolitan area network, this is a computer network covering a geographic area larger than a few hundred feet of a WLAN, typically spanning a few blocks up to an entire city. 
+                            Its purpose is to provide full Internet connectivity to all computers within a neighborhood or metropolitan area, and treat Internet services as a public utility, much like electricity, gas, and water, which is provided to individuals by a local or regional government agency.</li>
+
+                <li><strong>Internet of Things:</strong> Refers to a network of physical objects embedded with technologies like radio frequency identifier(RFID) that can send and receive messages over the internet. An RFID is a communications device that has its own Internet address, the same type of network address uses laptop tablet, or smartphone.</li>
+                
+                <li><strong>LAN:</strong> A local area network that connects hardware devices such as computers, printers, and storage devices within a limited geographic area, including the interconnection of machines in one room or in the same office building.</li>
+
+                <li><strong>repeater:</strong> This is a network device that simply amplifies and forwards signals at the physical layer, allowing two Ethernet LANs to function exactly as if they were one network</li>
+
+                <li><strong>bridge:</strong> A device used to connect separate LAN segments. It examines each frame to see if it should be forwarded from one network to another.</li>
+
+                <li><strong>WAN:</strong> A wide area network that connects devices that are not in close physical proximity but are across town, across the country, or across the ocean.</li>
+
+                <li><strong>packet and packet switching:</strong> A packet is an information block with a fixed maximum size that is transmitted through the network as a single unit. 
+                            Packet switching is a method of data transmission where a message is broken up into multiple packets, and each packet is sent independently through the network to the destination.</li>
+
+                <li><strong>ISP:</strong> This refers to Internet service provider, it is a business whose purpose is to provide access from a private network (such as a corporate or university network) to the Internet or from an individual’s home computer to the Internet.</li>
+
+                <li><strong>firewall:</strong> It is network security system either hardware and software placed at the entry points to a private network to monitor cyber threats and prevent unauthorized access.</li>
+
+                <li><strong>protocol:</strong> A protocol is a mutually agreed-upon set of rules, conventions, and agreements for the efficient and orderly exchange of information.</li>
+
+                <li><strong>cloud computing:</strong> A model that provides on demand access to shared computing resources, such as storage, servers, and applications over a internet.</li>
+
+                <li><strong>net neutrality:</strong> This means that a public information network such as an Internet service provider (ISP) should treat all users, all platforms, 
+                            and all content	equally—essentially it should be operated like the water, electric, and	gas companies, as publicly regulated utilities.</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
+        <th>Briefly describe the five layers of TCP/IP (the Internet protocol hierarchy):</th>
+    </tr>
+
+    <tr>
+        <td>
+            <ol>
+                <li><strong>Layer 1. Physical layer</strong> The Physical layer protocols govern the exchange of binary digits (bits) across a physical communication channel, such as a fiber-optic cable,  copper wire, or wireless radio channel.</li>
+                
+                <li><strong>Layer 2. Data link layer</strong> Data link layer: This layer's job is to address and solve these two issues—error handling and framing. This process is done in two stages called Layer 2a, Medium Access Control, and Layer 2b, Logical Link Control. Together these two services form the Layer 2 protocol.</li>
+                
+                <li><strong>Layer 3. Network layer</strong> This layer is responsible for delivering a message from the site where it was created to its ultimate destination. It creates a universal addressing scheme for all network nodes and determines the best path for routing between any two nodes in the network.</li>
+                
+                <li><strong>Layer 4. Transport layer</strong> This layer's duty is to create a “program-to-program” delivery service, which ensuring the messages from a specific program at the source to a specific program at the destination. It also handles error detection and ensures reliability of the data delivery.</li>
+
+                <li><strong>Layer 5. Application layer</strong> This layer defines the rules for implementing the end-user services provided by a network. Protocol like HTTP, which is used by the web to access and deliver webpages, to serve as a general model for how Application layer services are typically built on top of the TCP/IP protocol stack.</li>
+
+            </ol>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>List and briefly describe at least 3 network services and benefits:</th>
+    </tr>
+
+    <tr>
+        <td>
+            <ol>
+                <li><strong>Email services (electronic mail):</strong> This is a type of network application that enables interpersonal communication by allowing users to send and receive messages across the internet. The benefits of it are that email is convenient, as users can send a message whenever they want, 
+                            and it waits for the recipient to log on and read it at his or her convenience. Also, email is fast, meaning a message from the United States typically arrives anywhere in the world in a few seconds. Electronic messages are not limited to only characters but can include a range of attachments, including photographs, text, graphics, video, and sound.</li>
+                
+                <li><strong>Resource sharing:</strong> A network service that has the ability to share physical resources, such as a 3-D printer or massive terabyte storage device, 
+                            as well as logical resources, such as software and data, among multiple users. Its benefits include being a cost-effective way to provide backup services as well as make it easier to access information from multiple devices such as your desktop computer at work, your tablet computer at home, and your smartphone on the road.</li>
+                
+                <li><strong>Electronic commerce:</strong> The use of computers and networks to support the paperless exchange of goods, information, business transactions, and services in the commercial sector. The benefits are it lets users automatically deposit paychecks, access a automatic teller machines (ATMs) for handling financial transactions from remote sites, 
+                            and use scanning devices at checkout counters to capture sales and inventory information in machine-readable form.</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>IEEE:</th>
+    </tr>
+    
+    <tr>
+        <td>
+            <ol>
+                <li><strong>What does the acronym, IEEE, stand for?</strong> IEEE stands for "Institute of Electrical and Electronics Engineers".</li>
+                
+                <li><strong>What is the mission and vision of IEEE?</strong> The mission of IEEE is is to foster technological innovation and excellence for the benefit of humanity. 
+                            In terms its vision will be essential to the global technical community and to technical professionals everywhere, and be universally recognized for the contributions of technology and of technical professionals in improving global conditions.</li>
+                
+                <li><strong>What are the benefits of IEEE membership?</strong> The benefits of IEEE are adapts to your needs, offering benefits for every stage of your career. Students and young professionals can access learning resources and career-boosting opportunities. 
+                            Professionals at all levels can tap into a global network of experts and stay at the forefront of technological advancement.</li>
+
+                <li><strong>What are the requirements for IEEE student membership, and how much does undergraduate membership cost annually for students from the USA?</strong> The requirements to became a IEEE student membership is a Student member must carry at least 50% of a normal full-time academic program as a registered undergraduate or graduate student in a regular course of study in IEEE-designated fields. 
+                            For undergraduate membership for USA student is cost $32 per year.</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+<h2>LAN Topologies Diagram</h2>
+<img src="topologies.jpg" width="500" />
+
+</body>
+</html>
+
