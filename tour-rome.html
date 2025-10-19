@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Name: Amanda Capps
+    DESCRIPTION: This code will find the cost of a tour of Italy for up to 4 guests.-->
+
+<head>
+    <title>Holiday Rome Tours</title>
+
+<script type= "text/javascript">
+    function romatours() {
+
+        //Tours variables
+        var airfarecost = 1200;
+        var hotelpernight = 265;
+        var mealscost = 75;
+        var busetourprice = 80;
+        var activitescost = 220;
+
+
+
+        var numeroftravelers = 0;
+        var roundtripcost = 0;
+        var nightsofhotel = 5;
+        var mealsperday = 5;
+        var busecostamt = 0;
+        var activitespriceamt = 0;
+        var totalcost = 0;
+
+         //calculations
+         numeroftravelers = prompt("Enter the number of travelers are going on the tour: ");
+         roundtripcost = numeroftravelers * airfarecost;
+         nightsofhotel = nightsofhotel * hotelpernight;
+         mealsperday = mealsperday * mealscost * numeroftravelers;
+         busecostamt = busetourprice * numeroftravelers;
+         activitespriceamt = activitescost * numeroftravelers;
+         totalcost = roundtripcost + nightsofhotel + mealsperday + busecostamt + activitespriceamt;
+
+         alert("\nHoliday Roma Tours" +
+              "\n----------------------------------------" +
+              "\nNumber of travelers: " + numeroftravelers +
+              "\n----------------------------------------" +
+              "\nRound trip cost: $" + roundtripcost +
+              "\nNights of hotel: $" + nightsofhotel +
+              "\nMeals per day: $" + mealsperday +
+              "\nBuse cost amount $" + busecostamt +
+              "\nActivites price amount: $" + activitespriceamt +
+              "\n----------------------------------------" +
+              "\nTotal: $" + totalcost);
+        document.write("<h1>Total cost:" +totalcost + "</h1>");
+    
+    }
+</script>
+</head>
+
+<body style = "color:#261d07; background-color: #aee9bf;
+            font-family: sans-serif; font-size: 18px; text-align: center;">
+
+      <h1>Holiday Roma!</h1>
+      <p>Visit Rome with us! <strong>Holiday Roma Tours</strong> are the most exciting way to visit this ancient <br />
+         Italian city. Stay in the luxurious <strong> Hotel Farnese,</strong> enjoy fabulous meals each day,<br />
+         and visit Rome's most renown sites and museums on our <strong> Hop On/Hop Off</strong> buses. Your trip <br />
+         will also include a night of musical theater at the <strong> Teatro Sistina!</strong></p>
+
+      <img src="rome.jpg" />
+ 
+      <br /><br />
+      
+    <table style="text-align:left; margin: auto;" border="1" width="650">
+        <tr style="font-weight: bold;">
+            <th colspan="3" style="text-align: center;">Holiday Rome Tour Rates</th>
+        </tr>
+
+        <tr>
+            <th>Air:</th>
+            <td>Round trip airfare from JFK to Rome</td>
+            <td>$1200</td>
+        </tr>
+
+        <tr>
+            <th>Hotel:</th>
+            <td>5 nights in 4-star hotel</td>
+            <td>$265 per night</td>
+        </tr>
+
+        <tr>
+            <th>Meals:</th>
+            <td>Includes 5 breakfasts & 5 dinners</td>
+            <td>$75 per day</td>
+        </tr>
+
+        <tr>
+            <th>Bus Tour:</th>
+            <td>Hop on/Hop off bus: 3-day pass</td>
+            <td>$80</td>
+        </tr>
+
+        <tr>
+            <th>Activities:</th>
+            <td>Includes 1 theater performance & museum tickets</td>
+            <td>$220</td>
+        </tr>
+
+        <tr>
+            <td colspan="3" style="text-align: center;">VAT is included. Alcoholic beverages and tips are not included.</td>
+        </tr>
+      </table>
+
+        <br />
+      <form>
+        <input style="border: 2px solid rgb(220, 210, 210);" 
+               type ="button" value =  "Click to calculate Tour Roma tour cost"
+               class="button"  onclick ="romatours()" />
+      </form>
+</body>
+    
+</html>
