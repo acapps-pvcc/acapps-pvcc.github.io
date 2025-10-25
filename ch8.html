@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chapter 1 Terms</title> 
+    <style>
+
+        body {
+            background-color: rgba(117, 49, 207, 0.622);
+        }
+        table, th,td {
+            border: 2px solid rgb(15, 16, 15); 
+            text-align: left;
+            width: 1000px;
+            background-color: rgb(247, 199, 161);
+            margin-left: 10%;
+        }
+
+       th {
+            background-color: rgb(56, 213, 211);
+        }
+
+       tr {
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-size: larger;
+       }
+
+       li {
+            margin-bottom: 15px;
+    }
+    </style>
+</head>
+
+<body>
+<table>
+    <tr>
+        <th><h1>Chapter 8: Information Security</h1></th>
+    </tr>
+
+    <tr>
+        <th>Student: Amanda Capps</th>
+    </tr>
+
+    <tr>
+        <th>Briefly describe or define:</th>
+    </tr>
+
+    <tr>
+        <td>
+            <ol>
+                <li><strong>information security:</strong> This means protecting data from those who do not have permission to access it. Information security could cover information locked in your filing cabinet, stuffed somewhere in your purse or wallet, or lying around on your desk.</li>
+
+                <li><strong>authentication:</strong> This refers to a process of verifying that you really are the person who has the right to access a particular device, whether it is your local machine or the remote server.</li>
+               
+                <li><strong>authorization:</strong>  Is the process that governs what an authenticated user is allowed to do. Once you are authenticated, there might still be operations that you are not permitted to carry out.</li>
+
+                <li><strong>dual authentication:</strong> A secure process in which a legitimate user verifies their identity using two forms of authentication. It typically prompts the user to enter his or her user ID and password. Each user has a small device or perhaps a smartphone app that then generates a random sequence of digits.</li>
+
+                <li><strong>social engineering:</strong> It is the process of using people to get the information you want. If Ravi wants Alice’s password, he might just ask her! In a business setting, he might get a chance to snoop around her office and find the yellow sticky note containing 
+                            her password attached to her monitor or stuck beneath her keyboard.</li>
+
+                <li><strong>virus:</strong> This defines a computer program that, like a biological virus, infects a host computer and then spreads. It embeds itself within another program or file. When that program or file is activated, the virus copies itself and attacks other files on the system.</li>
+
+                <li><strong>worm:</strong> It is a self-replicating piece of software that can travel from node to node without any human intervention, and  is very similar to a virus, but it can send copies of itself to other nodes on a computer network without having to be carried by an infected host file. It is a self-replicating piece of software that can travel from node to node without any human intervention.</li>
+
+                <li><strong>Trojan horse:</strong> A computer program that does some legitimate computational task but also, unbeknownst to the user, contains code to per form the same kinds of malicious attacks as viruses and worms—corrupt or delete files, slow down the computer, and the like.</li>
+
+                <li><strong>ransomware:</strong> This is a malware software that encrypts files on a computer with a strong encryption algorithm, only the author of the malware, who holds the decryption key, can unlock the files. 
+                            Typically, The user presented with a “ransom note” demanding payment in order to release the files. Also, the attacker might warned that without payment, the	files may be posted online and publicly	released.</li>
+
+                <li><strong>phishing:</strong> Phishing is a practice used to illegally obtain sensitive information such as credit card numbers, account numbers, and passwords. 
+                            An email is sent claiming to be from a legitimate organization such as a bank, credit card company, online retailer, government agency, or social media site asking the recipient to click a link to update or verify his or her account information.</li>
+
+                <li><strong>White Hat:</strong> This refers to a type of ethical hacker and the security experts who try to keep us safe in cyberspace.</li>
+
+                <li><strong>Black Hat:</strong> This means  the bad guys (or gals!) who try to ferret out computer system weaknesses for financial gain, control, or outright destruction.</li>
+
+                <li><strong>encryption/decryption:</strong> Encryption is the process of using an algorithm to convert information into a representation that cannot be understood or utilized by anyone. Its purpose is to make information meaningless even if someone does manage to steal it. 
+                            Decryption is the reverse of encryption. This using an algorithm that converts the ciphertext back into plain text, and decoded back to readable original text.</li>
+
+                <li><strong>cryptography:</strong> It is the science of “secret writing.” A message (plaintext) is encoded (encrypted) before it is sent, for the purpose of keeping its content secret if it is intercepted by the wrong parties.</li>
+
+                <li><strong>symmetric encryption algorithm:</strong> A encryption method that requires the use of a secret key known to both the sender and the receiver. The sender encrypts the plaintext using the key. The receiver, knowing the key, is easily able to reverse the process and decrypt the message. </li>
+
+                <li><strong>Caesar cipher:</strong> A encryption technique  also called a shift cipher, it involves shifting each character in the message to another character some fixed distance farther along in the alphabet.</li>
+
+                <li><strong>block cipher:</strong> This is a group or block of plaintext letters gets encoded into a block of ciphertext, but not by substituting one character at a time for each letter. Each plaintext character in the block contributes to more than one ciphertext character, 
+                                                   and each ciphertext character is the result of more than one plaintext letter.</li>
+
+                <li><strong>Data Encryption Standard (DES):</strong> This is a symmetric block cipher developed by IBM in the 1970s for the U.S. National Bureau of Standards.  It was designed to protect electronic information and processes data in 64-bit blocks using a 56-bit key for both encryption and decryption.</li>
+
+                <li><strong>public key system:</strong> It is an asymmetric encryption method that uses a pair of keys; an encryption key, which is shared openly so anyone can send secure messages to a particular receiver, but the decryption key cannot be derived from it and is known only by the receiver.</li>
+
+                <li><strong>embedded computers:</strong> Are computational devices such as chips, processors, or computers that are embedded within another system, they are small devices that is hidden by user. Unlike a general-purpose computer that can be programmed to do many different things, 
+                                                         embedded computers usually perform just one or two tasks as part of the system in which they occur.</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
+        <td><strong>Briefly describe how a text file can be hidden in a steganographic image:<br /></strong> 
+                    A text file can be hidden in an image file by modifying the least significant bits of the image's pixel data to encode the binary representation of the text. For example, the ASCII code for "A" is 01000001. The  least significant bits of first 8 bytes of the image file would be set to 0, 1, 0, 0, 0, 0, 0, and 1. 
+                    These changes are make the image appear unaltered to the naked eye.
+        </td>
+
+    </tr>
+
+    <tr>
+        <th>List six ways to protect yourself from most cyber attacks</th>
+    </tr>
+
+    <tr>
+        <td>
+            <ol>
+                <li>Be sure your computer has up-to-date antivirus software from a repu-table company. Such software can detect worms, viruses, and Trojan horses by the distinctive “signatures” those programs carry. It cleans your machine of infected files.</li>
+
+                <li>Be sure your computer has up-to-date firewall software from a reputa-ble company. Firewall software guards the access points to your computer, blocking communications to or from sites you don’t permit and preventing certain operations from being initiated across the Internet.</li>
+
+                <li>Be sure your computer has up-to-date antispyware from a reputable company. Antispyware routinely scans your computer for any “spyware” programs that may have infected your machine—programs that capture information on what websites you have visited and what passwords and credit card numbers you have used.</li>
+
+                <li>Set your browser to use a pop-up blocker. A pop-up is a small window that “pops up” on the webpage your browser is currently displaying. Most pop-ups are simply annoying advertising, but some contain links, perhaps disguised as “Close” buttons, that download a virus to your machine.</li>
+
+                <li>Always install the latest security patches or updates to your operating system; better yet, set your machine to install automatic updates.</li>
+
+                <li>Don’t send personal or financial information in response to any email(“My wealthy Nigerian uncle left me a fortune that I am willing to share with you but I need your account number . . . ”).</li>
+
+            </ol>
+        </td>
+    </tr>
+</table>
+
+
+<table>
+     <tr>
+        <th>Brackets Section</th>
+    </tr>
+
+    <tr>
+        <td>
+            <ol>
+                <li><strong>What is Brackets?</strong> Brackets is a lightweight, yet powerful, modern text editor. We blend visual tools into the editor so you get the right amount of help when you want it without getting in the way of your creative process.</li>
+                <li><strong>How much does it cost?</strong> Brackets is a free and open-source code editor, there is no cost to download or use it.</li>
+                <li><strong>Describe several extensions you can download to enhance Brackets:</strong> Git for version control integration, Emmet for High-speed HTML and CSS workflow, Beautify for Format JavaScript, HTML, and CSS files, Markdown for Live preview of markdown documents.</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
+        <th>Crypt Games Section</th>
+    </tr>
+
+    <tr>
+        <td>
+            <ol>
+                <li><strong>Easy ciphers game:</strong> The game I played is "CAESER", this is a type of shift cipher and is known to many as one of the most simple and well known of ciphers. After playing this game, it taught me to pay attention to details and carefully observe shifting letters in the Caesar cipher to decipher the encrypted message.</li>
+                <li><strong>Normal ciphers game:</strong> This level the game I played is "POLYBIUS", which game is a cipher where the letters in the message are turned into numbers. Through this game, I learned how to use the grid accurately step by step to find each letter  corresponding to a pair of numbers. This gave me an understanding of pattern recognition technology. Additionally, it helps me understand the concept of navigation and utilize a grid for encoding and decoding.</li>
+                <li><strong>Hard ciphers game:</strong> This level the game I played is "BIFID", this game is a cipher similar to the Polybius Cipher, in which the letters in the message are turned into numbers. I thought this game was challenging because it can be confusing and even hard to understand at first. But it has taught me the skills of thoughtful thinking and careful observation when deciphering puzzles.</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+
+<table>
+     <tr>
+        <th>Opinion Section</th>
+    </tr>
+
+    <tr>
+        <td>
+            <ol>
+                <li><strong>What do you think of Christine McCarthy and her cipher games project?</strong> <br />I think Christine McCarthy‘s project idea is admirable and clever. She’s truly impressive for creating such a valuable and educational game for high school students! Her cipher project is a brilliant example of game development. 
+                            It‘s more than just a relaxing game; it genuinely helps people learn to use logic to solve problems, from the simplest to the most complex. It teaches attention to detail, careful observation, exploration of difficult problems, as well as deciphering techniques and strategies etc.</li>
+
+                <li><strong>Would you recommend this site to others who might be interested in cryptography?</strong> <br /> Yes, I highly recommend this site to others who might be interested in cryptography, as it can effectively improve people‘s understanding of cryptography and boost their problem-solving skills. </li>
+                <li> <strong>What do you think of Christine’s code?</strong> <br /> Christine’s code is generally clear, readable, and well-organized. Overall, the layout of each code statement is simple and mostly easy to understand. However, her nested tags, which place one HTML tag within another on the same line, create a cluttered structure that‘s hard to read. It would be better if she split the line between the tags, which would improve readability.</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+
+</body>
+</html>
+
