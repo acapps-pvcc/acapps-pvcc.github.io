@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Name: Amanda Capps
+     Program Purpose: This program will find the cost of pizzas & subs 
+-->
+
+<head>
+    <title> Gallo Pizza & Sub Shop</title>
+    <style>
+        body {
+            color: #8c4fe8;
+            background-color: #f3e4e8; 
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+        }
+
+        table {
+            color: #5e644e;
+            background-color: #dfd8c1;
+            width: 300px;
+        }
+
+        td {
+            font-weight: bold;
+        }
+        h3 {
+            text-align: center;
+        }
+        input {
+            font-size: 1.3em;
+            font-weight: bold;
+            width: 300px;
+        }
+
+        img {
+            width:300px;
+        }
+    </style>
+
+<script type = "text/javascript">
+
+function pizzaorder() {
+
+    //prices & tax rate constants
+    const salestaxrate = 0.07;
+    const discountrate = .15;
+    const pricesmall = 7.99;
+    const pricemedium = 10.99;
+    const pricelarge = 13.99;
+    const pricexlarge = 17.99;
+    const dollar = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD',});
+    const howtopay = "\n\nCredit, Debit, and Cash accepted";
+    const line = "\n----------------------------------"
+
+
+    //variables for calculated amounts
+    var pizzasize = "";
+    var numpizzas = 0;
+    var pizzacost = 0;
+    var discountamount = 0;
+    var salestaxamount = 0;
+    var total = 0;
+
+
+    //ask user for input
+    part1 = "What size Gallo Pizza would you like to order?";
+    part2 = "\nEnter: \n\t S for small \n\t M for medium \n\t L for large \n\t X for XLarge"
+    pizzasize = prompt(part1 + part2)
+    numpizzas = prompt("Enter the number of Gallo pizzas you would like to order:");
+
+    //calculate amounts
+    if (pizzasize == "S" || pizzasize == "s") pizzacost = numpizzas * pricesmall;
+    if (pizzasize == "M" || pizzasize == "m") pizzacost = numpizzas * pricemedium;
+    if (pizzasize == "L" || pizzasize == "l") pizzacost = numpizzas * pricelarge;
+    if (pizzasize == "X" || pizzasize== "x") pizzacost = numpizzas * pricexlarge;
+
+    if (numpizzas >= 10) discountamount = pizzacost * discountrate;
+    pizzacost -= discountamount;  //subtract discount from pizzacost
+    salestaxamount = pizzacost * salestaxrate;
+    total = pizzacost + salestaxamount;
+
+    //display results
+    alert("\nGALLO'S PIZZA & SUBS SHOP" + line + 
+         "\nNumber of pizzas: " + numpizzas +
+         "\nDiscount: " + dollar.format(discountamount) + line + 
+         "\nPizza cost: " + dollar.format(pizzacost) +
+         "\nSales tax: " + dollar.format(salestaxamount) +
+         "\nTotal: " + dollar.format(total) + howtopay);
+} //end function pizza order
+</script>
+</head>
+
+<body>
+    <h1>Gallo Pizza & Sub Shop</h1>
+    <h2>Best pizza this side of Italy!</h2>
+    <h4>
+        5600 Main Street <br />
+        Call to order: 417.330.9800 <br />
+        Fast and free delivery within city limits! <br />
+        Credit, debit, cash accepted
+    </h4>
+
+    <table border ="1">
+        <tr>
+            <td colspan = "2"><h3>Pizza Price List</h3></td>
+        </tr>
+
+        <tr>
+            <td colspan = "2"><img src= "pizza.jpg"/></td>
+        </tr>
+
+        <tr>
+            <td>Small</td>
+            <td>$7.99</td>
+        </tr>
+
+        <tr>
+            <td>Medium</td>
+            <td>$10.99</td>
+        </tr>
+
+         <tr>
+            <td>Large</td>
+            <td>$13.99</td>
+        </tr>
+
+         <tr>
+            <td>XLarge</td>
+            <td>$17.99</td>
+        </tr>
+
+        <tr>
+            <td>Sales tax</td>
+            <td>7%</td>
+        </tr>
+
+        <tr>
+            <td colspan = "2">Gallo Pizza Party: <br />
+                Order 10 or more pizzas, receive a 15% discount!
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan = "2">
+            <form> 
+                <input type = "button" value = "Click here to order pizza"
+                class = "button" onclick="pizzaorder()" />
+            </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
