@@ -87,6 +87,51 @@ function pizzaorder() {
          "\nSales tax: " + dollar.format(salestaxamount) +
          "\nTotal: " + dollar.format(total) + howtopay);
 } //end function pizza order
+
+
+//Sub functions starts here.
+function suborder() {
+
+    //prices & tax rate constants
+    const salestaxratesub = 0.07;
+    const priceitaliansub = 12.99;
+    const pricehamsub = 10.99;
+    const pricesteaksub = 12.99;
+    const priceturkeysub = 11.99;
+    const dollar = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD',});
+    const howtopay = "\n\nCredit, Debit, and Cash accepted";
+    const line = "\n----------------------------------"
+
+
+    //variables for calculated amounts
+    var numsubs = 0;
+    var subcost = 0;
+    var salestaxamountsub = 0;
+    var subtotal = 0;
+
+
+    //ask user for input
+    part1 = "What kind of sub would you like to order?";
+    part2 = "\nEnter: \n1. for Hot Italian Sub \n2. for Ham and Cheese Sub \n3. for Philly Cheese Steak Sub \n4. for Smoked Turkey Sub"
+    typeofsub = prompt(part1 + part2)
+    numsubs = prompt("Enter the number of subs you would like to order:");
+
+    //calculate amounts
+    if (typeofsub == "1") subcost = numsubs * priceitaliansub;
+    if (typeofsub == "2") subcost = numsubs * pricehamsub;
+    if (typeofsub == "3") subcost = numsubs * pricesteaksub;
+    if (typeofsub == "4") subcost = numsubs * priceturkeysub;
+    salestaxamountsub = subcost * salestaxratesub;
+    subtotal = subcost + salestaxamountsub;
+
+    //display results
+    alert("\nGALLO'S PIZZA & SUBS SHOP" + line + 
+         "\nNumber of subs: " + numsubs +
+         "\nSubs cost: " + dollar.format(subcost) +
+         "\nSales tax sub: " + dollar.format(salestaxamountsub) +
+         "\n Sub total: " + dollar.format(subtotal) + howtopay);
+} //end function sub order
+
 </script>
 </head>
 
@@ -149,5 +194,53 @@ function pizzaorder() {
             </td>
         </tr>
     </table>
+
+    <br />
+
+    <!-- Table to display informations about for subs-->
+    <table border ="1">
+        <tr>
+            <td colspan = "2"><h3>Sub Price List</h3></td>
+        </tr>
+
+        <tr>
+            <td colspan = "2"><img src= "sub.jpg"/></td>
+        </tr>
+
+        <tr>
+            <td>Hot Italian Sub</td>
+            <td>$12.99</td>
+        </tr>
+
+        <tr>
+            <td>Ham & Cheese Sub</td>
+            <td>$10.99</td>
+        </tr>
+
+         <tr>
+            <td>Philly Cheese Steak</td>
+            <td>$12.99</td>
+        </tr>
+
+         <tr>
+            <td>Smoked Turkey Sub</td>
+            <td>$11.99</td>
+        </tr>
+
+        <tr>
+            <td>Sales tax</td>
+            <td>7%</td>
+        </tr>
+
+        <tr>
+            <td colspan = "2">
+            <form> 
+                <input type = "button" value = "Click here to order sub"
+                class = "button" onclick="suborder()" />
+            </form>
+            </td>
+        </tr>
+    </table>
+    
 </body>
 </html>
