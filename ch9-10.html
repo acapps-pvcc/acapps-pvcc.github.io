@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chapter 9 & 10 Terms</title> 
+    <style>
+
+        body {
+            background-color: rgb(252, 176, 143);
+        }
+        table, th,td {
+            border: 2px solid rgb(15, 16, 15); 
+            text-align: left;
+            width: 1000px;
+            background-color: rgb(241, 244, 215);
+            margin-left: 10%;
+        }
+
+       th {
+            background-color: rgb(207, 207, 56);
+        }
+
+       tr {
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           font-size: large;
+        }
+        
+       li {
+            margin-bottom: 15px;
+        }
+
+       ul {
+         margin-left: 10%;
+         font-size: larger;
+       }
+
+       h2, h3 {
+         margin-left: 10%;
+       }
+
+    </style>
+</head>
+
+<body>
+
+<table>
+    <tr>
+        <th><h1>Chapter 9: Introduction to High Level Languages Chapter</h1></th>
+    </tr>
+
+    <tr>
+        <th><h1>Chapter 10: Tower of Babel: Programming Languages</h1></th>
+    </tr>
+
+    <tr>
+        <th>Student: Amanda Capps</th>
+    </tr>
+
+    <tr>
+        <th>Chapter 9: Introduction to High Level Languages</th>
+    </tr>
+
+    <tr>
+        <th>List four disadvantages of using assembly language:</th>
+    </tr>
+
+    <tr>
+        <td>
+            <ol>
+                <li>The programmer must “manually” manage the movement of data items between and among memory locations and registers (although such data items can be assigned mnemonic names).</li>
+                
+                <li>The programmer must take a microscopic view of a task, breaking it down into tiny subtasks—ADD, COMPARE, INCREMENT—that direct what is going on in individual memory locations and registers.</li>
+                
+                <li>An assembly language program is machine specific.</li>
+
+                <li>Statements are not natural-language-like (although operations are given mnemonic code words as an improvement over a string of bits).</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
+        <th>List four expectations programmer have for writing programs in a high-level language ("third generation" language):</th>
+    </tr>
+
+    <tr>
+        <td>
+            <ol>
+                <li>The programmer need not manage the details of the movement of data items within memory or pay any attention to exactly where those items are stored.</li>
+
+                <li>The programmer can take a macroscopic view of tasks, thinking at a higher level of problem solving (add B and C, and call the result A). The “primitive operations” used as building blocks in algorithm construction.</li>
+
+                <li>Programs are portable rather than machine specific.</li>
+
+                <li>Programming statements are closer to natural language and use standard mathematical notation.</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
+       <th>Briefly describe or define:</th>
+    </tr>
+
+    <tr>
+        <td>
+            <ol>
+                <li><strong>object code:</strong> This refers to binary machine language instructions produced by a compiler or assembler after translating a program's source code or low-level assembly language. It is the machine-readable format that a computer can execute directly.</li>
+
+                <li><strong>source code:</strong> This refers to a set of human-readable instructions written by programmers in a high-level language. It typically needs to be translated into machine language by a compiler or interpreter before it can be executed by the computer.</li>
+
+                <li><strong>procedural language:</strong> A type of imperative programming language in which the program consists of sequences of statements that tell the computer what to do and how to do it. These instructions are executed in a step-by-step approach and typically manipulate data items to solve specific problems.</li>
+
+                <li><strong>Integrated Development Environment (IDE):</strong> An IDE is software that provides a collection of software development tools, such as a text editor to create a program; a file system to store programs; a language translator to translate the program to machine language; 
+                            and a debugger to help locate the errors. It allows programmers to perform a number of tasks within the shell of a single application program, rather than having to use a separate program for each task. </li>
+
+                <li><strong>software development life cycle:</strong> The overall sequence of steps needed to complete a large-scale software project. These phases include the total time spent by programmers and designers on problem specification, program design, implementation, review, modification, debugging, improving the original code and writing final documentation.</li>
+
+                <li><strong>waterfall model of software development:</strong> It is defined as a  sequential process that is one step must be completed before moving on to the next. Like a series of water falls moving a river down and down through various plateaus. In the software development process, these plateaus would be the feasibility study, problem specification, program design.</li>
+
+                <li><strong>agile model of software development:</strong> It is software development approach emphasizing flexibility ability to move with quick easy grace; resourceful and adaptable character, nimbleness, and the ability to adjust to changes. It involves close collaboration with the development team and the customer to ensure that the product meets their needs and requirements.</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
+        <th>Describe each of these components of the software development life cycle:</th>
+    </tr>
+
+    <tr>
+        <td>
+            <ol>
+                <li><strong>feasibility study:</strong> This evaluates a proposed project and compares the costs and benefits of various solutions. One choice might be to buy a new computer system for this project. In addition to the costs of the machine itself, there may be costs 
+                            for peripherals such as 3-D printers or  telecommunications links. The costs of software equipment maintenance; salary for developers or consultants, technical  support people, and data entry clerks, and as must the costs incurred in training new users on the system.</li>
+
+                <li><strong>problem specification:</strong> It involves developing a clear, concise, and unambiguous statement of the exact problem the software is to solve. the original problem statement used in the feasibility study is written in a natural language, such as English, it may be unclear, incomplete, or even internally contradictory. 
+                            This rough initial problem statement must be transformed into a complete, accurate, and consistent problem specification that describes the actions this software should take for every possible input it may encounter. Additionally, this phase,  the software developers and their 
+                            “customers”—those who are commissioning the software and will be its eventual users—must resolve each and every inconsistency, ambiguity, and gap.</li>
+
+                <li><strong>program design:</strong> It is the time to plan how it is to be done.Tasks are broken down into subtasks, which are broken down into sub-subtasks, until each piece is small enough to code comfortably.  Some of this design may be documented graphically, through structure charts or through class diagrams that give the properties and functions of each class.</li>
+
+                <li><strong>algorithm selection:</strong> This step is the process of examining two different algorithms; a searching—sequential search and binary search which lets the programmer to determine which is more suitable for this particular task and which is more efficient. </li>
+
+                <li><strong>coding:</strong> It is the process of converting the detailed designs into computer code. If the design has been carefully developed, this should be a relatively routine job. Perhaps reusable code can be pulled from a program library, or a useful class can be employed.</li>
+
+                <li><strong>debugging:</strong> Is the process of locating and correcting program errors, and it can be a slow and expensive operation that requires as much effort as writing the program in the first place. 
+                                                Errors can occur because a program statement fails to follow the correct rules of syntax, which makes the statement unrecognizable by the compiler and results in an error.</li>
+
+                <li><strong>testing:</strong> This approach is to design a special set of test cases, called a test suite, and run the program using this special test data. Test data that is carefully chosen to exercise all the different logic paths through a program can help uncover errors.</li>
+                
+                <li><strong>verification:</strong> Is the process used to prove that if the input data to a program satisfies certain conditions, then, after the program has been run on this data, the output data satisfies certain other conditions. This is a formal proof, much like 
+                                                   the proof of a mathematical theorem that condition B follows from condition A.</li>
+
+                <li><strong>documentation:</strong> It refers to all of the written and online material that makes a program understandable. This includes internal documentation, which is part of the program code itself. Good internal documentation consists of choosing meaningful names for program identifiers, 
+                                                    using plenty of comments to explain the code, and separating the program into short modules, each of which does one specific subtask. External documentation consists of any materials assembled to clarify the program’s design and implementation.</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+<br /> <br />
+
+
+<!-- Chapter 10 Informations-->
+
+<h2>Chapter 10: Tower of Babel: Programming Languages</h2>
+
+<h3>Questions & Answers:</h3>
+
+<ul>
+    <li><strong>Q: Why does the textbook refer to "the Tower of Babel" regarding computer languages?</strong> <br />
+                A: The textbook uses the ”Tower of Babel“ analogy because computer languages are numerous and complex; each language has different characteristics and unique expressions, which can be confusing. 
+                This is similar to the biblical story of Babel, which illustrates how the diversity of human languages has made communication complicated, just as the challenge comes from using and understanding different programming languages to write programs.
+    </li>
+
+    <li><strong>Q: Why isn't there just one computer programming language?</strong> <br />
+                A: There isn't just one programming language because each language was designed to meet the specific needs of one particular area of application. Consequently, one language might be better suited than others for writing certain kinds of
+                   programs. The situation is somewhat analogous to the automobile market. The basic automotive needs of the country probably could be served by a single car model and a single truck model.
+    </li>
+
+    <li><strong>Q: Why didn't FORTRAN use the less than ( ‹ ) symbol when comparing two numbers?</strong> <br />
+                A: FORTRAN doesn't use less the than (<) symbol when comparing two numbers because the keypunches that were used to create the punched cards 
+                on which early Fortran programs were submitted to the computer had no such symbols.
+    </li>
+
+    <li><strong>Q: What was COBOL designed for?</strong> <br />
+                A: COBOL was designed to serve business needs such as managing inventories and payrolls. In such applications, summary reports are important output products. 
+                   Much of the processing in the business world concerns updating “master files” with changes from “transaction files.”
+    </li>
+
+    <li><strong>Q: What was the language, C, designed for?</strong> <br />
+                A: The C language was designed for systems programming, in particular for writing the operating system UNIX. 
+                UNIX had been developed at Bell Labs a short time before and was originally written primarily in assembly language.
+    </li>
+
+    <li><strong>Q: What is the difference between C and C++?</strong> <br />
+                A: The difference between C and C++ is that C does not support object oriented programming, while C++ is an object
+                   oriented programming language that adds many new features; giving it more sophistication and cleaner ways to do certain tasks.
+    </li>
+
+    <li><strong>Q: Who or what is the language, Ada, named for and why?</strong> <br />
+                A:The programming language Ada was named after Ada Augusta Byron Lovelace. Lady Ada Lovelace is regarded as the world’s
+                  first programmer based on her correspondence with Charles Babbage and her published notes on his work with the Analytical Engine.
+    </li>
+    
+    <li><strong>Q: What is a Java "applet"?</strong> <br />
+                A: Java "applet" is a small application that designed to run from webpages.
+    </li>
+
+    <li><strong>Q: How much does Python cost to download, install, and use?</strong> <br />
+                A:Python is a open source programming language that is free to download, and is freely available and can be used, distributed, or modified by anyone.
+    </li>
+
+    <li><strong>Q: What is Microsoft.NET?</strong> <br />
+                A: Microsoft.NET is essentially a giant collection of tools for software development. It was designed so that traditional 
+                   text-based applications, GUI applications, and web-based programs can all be built with equal ease. The.NET Framework provides a whole library of classes for building GUIs with menus, buttons, text boxes, and more.
+    </li>
+
+    <li><strong>Q: What is SQL and what is it used for?</strong> <br />
+                A: SQL stands for Structured Query Language and it a specialized language. It is designed to be used with databases, which are collections of related facts and information. It allows user to be able to add new data, create and retrieve data already stored.  
+    </li>
+
+    <li><strong>Q: What is R and what is it used for?</strong> <br />
+                A: R is a specialized programming language designed for statistical computing and graphics. It can compute the maximum value, minimum value, mean, median, standard deviation, and other more sophisticated statistical functions with data set. 
+                   unlike a spread sheet, in R program it allows multiple data sets to be run efficiently and repeatedly.  
+    </li>
+
+    <li><strong>Q: What is Go (or golang) and what is it used for?</strong> <br />
+                A: Go is a programming language developed at Google. It was designed to combine the ease of programming of an interpreted, dynamically typed language with the efficiency and safety of a statically typed, compiled language. 
+                Go is used for systems programming, programming for multicore machines.
+    </li>
+
+    <li><strong>Q: What is Swift and what is it used for?</strong> <br />
+                A: Swift is a modern programming language developed by Apple. It is used for building applications for Apple's platforms, including iOS (iPhone/iPad), macOS, watchOS, and tvOS. In other words, Swift powers many of the apps across Apple devices. 
+    </li>
+</ul>
+
+
+<br /> <br />
+
+<table>
+    <tr>
+        <th>Briefly describe each of the following alternative programming paradigms</th>
+    </tr>
+
+    <tr>
+        <td>
+            <ol>
+                <li><strong>functional programming:</strong> It views every task in terms of (surprise!) functions. Unlike the more general usage of the word function in some procedural programming languages.</li>
+
+                <li><strong>logic programming:</strong> This type of programming go a step further toward not specifying exactly how a task is to be done. 
+                            In logic programming, various facts are asserted to be true, and on the basis of these facts, a logic program can infer or deduce other facts. When a query is posed to the program, 
+                            it begins with the storehouse of facts and attempts to apply logical deductions, in as efficient a manner as possible, to answer the query.</li>
+
+                <li><strong>parallel programming:</strong> This is a catchall term for a variety of approaches to computing architectures and algorithm design.</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
+        <th>Programming language comparison Section</th>
+    </tr>
+
+    <tr>
+        <td>
+            <ol>
+                <li><strong>What are the five programming languages used?</strong> The five programming languages used are Ada, C++, C#, Java, and Python.</li>
+
+                <li><strong>How are comments created in each language?</strong> Comments in Ada are created using two dashes like (--). In C++, C#, and Java two forward slashes (//) are used for single-line comments, while multi-line comments begin with a slash followed 
+                            by asterisk (/*); asterisk followed by a slash to end the comments(*/). In Python comments are created using a hash tag or hash mark(#).</li>
+
+                <li><strong>What statement is used to get input from the user?</strong> In Ada, the statement used to get input from the user is INT_IO.GET(n); it reads an integer value from the user, and TEXT_IO.PUT is used to print a message to the user.
+                            In C++, the statement used to get input from the user is cin >> n; it reads an integer value from the user, and cout << is used to display a message to the user.
+                            In C#,the statement used to get input from the user is Console.ReadLine(), which reads the value entered by the user, and Console.Write is used to display text to the user.
+                            In Java, the statement used to get input from the user is inp.nextInt(), which reads input value from the user.
+                            In Python, the statement used to get input from the user is input(), which reads a value entered by the user. 
+                </li>
+
+                <li><strong>What statement is used to increase the number by 1?</strong> The statement is used to increase the number by 1 in Ada is  n := n + 1;
+                            In C++, C#, and Java the statement is n = n + 1; to increase the number by 1. While Python use statement n = n + 1 without semicolon (;) to increase the number by 1.</li>
+
+                <li><strong>What statement is used to display output to the user?</strong> The statement used to display output to the user include: Ada is TEXT_IO.PUT, in C++ it used cout << to display output to the user, C# used Console.Write statement to display output, Java used System.out.println() to print out output to the user, Python to print out output to the user is print() statement.</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+<br />
+
+<table>
+    <tr>
+        <th colspan="5">Computer Programming Language Comparisons</th> </tr>
+    </tr>
+
+    <tr>
+        <th>Language</th>
+        <th>Comments</th>
+        <th>Input statement(s)</th>
+        <th>Increase by 1</th>
+        <th>Output statement</th>
+    </tr>
+
+    <tr>
+        <td>1. Ada</td>
+        <td>--</td>
+        <td>TEXT_IO.PUT <br /> INT_IO.GET</td>
+        <td>n:=n+1;</td>
+        <td>TEXT_IO.PUT </td>
+    </tr>
+  
+    <tr>
+        <td>2. C++</td>
+        <td>//</td>
+        <td>cin >> n</td>
+        <td>n = n + 1;</td>
+        <td>cout << </td>
+    </tr>
+
+    <tr>
+        <td>3. C#</td>
+        <td>//</td>
+        <td>Console.ReadLine() <br /> Console.Write</td>
+        <td>n = n + 1;</td>
+        <td>Console.Write</td>
+    </tr>
+
+    <tr>
+        <td>4. Java</td>
+        <td>//</td>
+        <td>inp.nextInt();</td>
+        <td>n = n + 1;</td>
+        <td>System.out.println();</td>
+    </tr>
+
+    <tr>
+        <td>5. Python</td>
+        <td>#</td>
+        <td>input()</td>
+        <td>n = n + 1</td>
+        <td>print()</td>
+    </tr>
+</table>
+
+<br /> 
+    
+<h2>Stack Overflow Q & A Section</h2>
+<ul>
+    <li><strong>Q: What is the purpose of Stack Overflow?</strong> <br />
+                A:The purpose of Stack Overflow is a public Q&A platform that millions of people visit every month to ask questions, learn, and share technical knowledge. 
+                Where developers and technologists share private knowledge with coworkers. 
+    </li>
+
+    <li><strong>Q: What is a line of code or code snippet (small chunk of code) to do this?</strong> <br />
+                A: The line of code to make background-color transparent in CSS code is: background-color: transparent; which for just to make the element to be transparent. 
+    </li>
+
+    <li><strong>Q: What should a Stack Overflow question title do?</strong> <br />
+                A: Stack Overflow question title should let people know what type of question is being asked. The question have to be specific, descriptive, and clear so that others can understand it and offer useful answers to help.
+    </li>
+
+    <li><strong>Q: What are the steps to writing a good Stack Overflow question?</strong> <br />
+                A: The steps to writing a good Stack Overflow question include:
+                   <br />
+                   Step 1. Understand the problem before sating to asking.
+                   <br />     
+                   Step 2. Write a meaningful title that summarizes the specific problem
+                   <br />
+                   Step 3. Provide information that describes what kind of the question need be answered by people.
+                   <br />
+                   Step 4: Provide necessary code example
+                   <br />
+                   Step 5: Format the post for readability
+                   <br />
+                   Step 6: Add tags to describe what the question is about.
+    </li>
+</ul>
+
+<br />
+
+<h2>Stack Overflow Programming Survey Section</h2>
+<ul>
+    
+    <li><strong>Q: How many people answered the 2021 survey?</strong> <br />
+                A: In May 2021 over 80,000 people answered the survey. 
+    </li>
+
+    <li><strong>Q: What were the top three countries where responses came from?</strong> <br />
+                A: The top three countries where responses came from are United States of America, India and Germany. 
+    </li>
+
+    <li><strong>Q: What was the age range of coders when they wrote their first line of code?</strong> <br />
+                A: over 50% of respondents wrote their first line of code between the ages of 11 to 17.
+    </li>
+
+    <li><strong>Q: What were the three most popular ways of learning how to code?</strong> <br />
+                A: The three most popular ways of learning how to code are other online resources (videos, blogs, etc.), School and Books / Physical media.
+    </li>
+
+    <li><strong>Q: How long have most people been coding?</strong> <br />
+                A: 50% of respondents have been coding for ten years or less. Within this group, the largest portion 29.91% of people been coding is 5 to 9 years.
+    </li>
+
+    <li><strong>Q: What percentage of coders identified as male?</strong> <br />
+                A: The percentage of coders identified as male is 91% of all respondents and 92% of professional developers identify as a man.
+    </li>
+
+    <li><strong>Q: Your opinion: How can the IT community get more women in coding?</strong> <br />
+                A: To get more women into coding, the IT community can encourage women's participation in programming activities. Some women may lack programming information or believe they are not capable enough for such work. 
+                The best approach is to provide them with the necessary support. This includes creating more learning opportunities for them to practice coding, which can build their confidence and help them realize that they can succeed in this field. Importantly, 
+                it is essential to be understanding of some women’s lack of experience, 
+                finding suitable learning paths to guide them forward, and offering resources to help women gain more coding experience.
+    </li>
+
+    <li><strong>Q: What were the top three programming languages?</strong> <br />
+                A: The top three programming languages in 2021 Stack Overflow developer survey were JavaScript, HTML/CSS and Python. 
+    </li>
+</ul>
+
+</body>
+</html>
+
