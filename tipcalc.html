@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <!-- Name: Amanda Capps -->
+     <!-- Program Purpose: This program will calculate tip amount based on quality of sercice -->
+
+<head>
+    <script type = "text/javascript">
+        function calculatetip()
+        {
+            //constants & variables
+            const dollar = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD',});
+            var amount_in = 0;
+            var service_in = 0;
+            var total_tip = 0;
+
+            //Retrieve the user data from the form, and assign the data to input variables
+            amount_in = document.getElementById('amount').value;
+            service_in = document.getElementById('services').value;
+
+            //If the user does not enter a bill amount, then display an error message
+            if (amount_in == '')
+            {
+                alert("Please enter the amount of the bill.");
+                return;
+            }
+
+            //Calculate the total & display result
+            total_tip = amount_in * service_in;
+            
+            //total = document.getElementById('total');
+            document.getElementById('total').value = dollar.format(total_tip);
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f5e0e0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            width: 500px; 
+            color: #d82c2c;
+            background-color: rgb(235, 229, 212);
+            border: none;
+            font-weight: bold;
+        }
+
+        td {
+            text-align: right;
+            padding: 10px;
+        }
+
+        input {
+            width: 150px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 80%;
+            border: none;
+            border-bottom: 1px solid #000000;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td colspan = "2"> 
+                    <h2>TIP CALCULATOR</h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td> Bill Amount:</td>
+                <td>
+                    <input type ="text" id="amount" placeholder="Amount total" />
+                </td>
+            </tr>
+
+            <tr>
+                <td> How was the service?</td>
+                <td>
+                    <select id="services">
+                        <option selected disabled hidden>Select</option>
+                        <option value="0.25">25% - Top Notch</option>
+                        <option value="0.20">20% - Excellent</option>
+                        <option value="0.15">15% - Good</option>
+                        <option value="0.10">10% - Fair</option>
+                        <option value="0.05">5% - Bad</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;"> 
+                    <input type = "button" value = "Click here to calculate tip"
+                    class = "button" onclick = "calculatetip()" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type = "reset">
+                </td>
+            </tr>
+
+            <tr style="font-weight: bold; font-size: 1.2em; text-align: left;">
+                <td> Tip Amount:</td>
+                <td>
+                    <input type="text" id="total" placeholder="0" />
+                </td>
+            </tr> 
+            
+        </table>
+    </form>
+</body>
+</html>
