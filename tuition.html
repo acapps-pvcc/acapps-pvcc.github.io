@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <!-- Name: Amanda Capps -->
+     <!-- Program Purpose: This program will calculate tuition amount based on the number of credit -->
+
+<head>
+     <title>PVCC Tuition and Fees Calculator</title>
+
+    <script type = "text/javascript">
+        function tuitioncalculator() {
+
+
+            //constants & variables
+            var dollar = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD',});
+            var tuitionRate = 169.30;
+            var institutionalFee = 1.75;
+            var studentactivityfeeRate = 2.90;
+
+            var numberOfCredits = 0;
+            var tuitionAmount = 0;
+            var institutionalAmount = 0;
+            var studentactivityFee = 0;
+            var totalOwed = 0;
+
+            //Retrieve the user data from the form, and assign the data to input variables
+           numberOfCredits = document.getElementById('credits').value;
+            //If the user does not enter a bill amount, then display an error message
+            if (numberOfCredits == '')
+            {
+                alert("Please enter the number of credits.");
+                return;
+            }
+
+            //Calculate the total amount
+           tuitionAmount = numberOfCredits * tuitionRate;
+           institutionalAmount = numberOfCredits * institutionalFee;
+           studentactivityFee = numberOfCredits * studentactivityfeeRate;
+           totalOwed = tuitionAmount + institutionalAmount + studentactivityFee;
+            
+            // Display outputs in form
+            document.getElementById('tuition').value = dollar.format(tuitionAmount);
+            document.getElementById('institutional').value = dollar.format(institutionalAmount);
+            document.getElementById('activity').value = dollar.format(studentactivityFee);
+            document.getElementById('total').value = dollar.format(totalOwed);
+        }
+    </script>
+    <style>
+        body {
+            background-color: #acf2bf;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            width: 600px; 
+            color: #270a0a;
+            background-color: rgb(218, 233, 145);
+            border: 3px dotted rgb(212, 108, 64);
+            font-weight: bold;
+        }
+
+        td {
+            text-align: right;
+            padding: 15px;
+        }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            border-bottom: 2px solid #e97713;
+            font-weight: bold;
+            background-color: rgb(217, 232, 232);
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td colspan = "2"> 
+                    <h2>PVCC TUITION & FEES CALCULATOR</h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Number of Credits:</td>
+                <td>
+                    <input type ="text" id="credits" placeholder="Credits here" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;"> 
+                    <input style="background-color: #3cd0f1;" type = "button" value = "Calculate tuition and fees"
+                    class = "button" onclick = "tuitioncalculator()" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input style="background-color: #3cd0f1;" type = "reset">
+                </td>
+            </tr>
+
+            <tr style="font-weight: bold; font-size: 1em; text-align: left;">
+                <td> Tuition:</td>
+                <td>
+                    <input type="text" id="tuition" />
+                </td> 
+            </tr>
+            
+            <tr style="font-weight: bold; font-size: 1em; text-align: left;">
+                <td>Institutional fee: </td>
+                <td>
+                    <input type = "text" id="institutional" />
+                </td>
+            </tr> 
+            
+            <tr style="font-weight: bold; font-size: 1em; text-align: left;">
+                <td>Student activity fee: </td>
+                <td>
+                    <input type = "text" id="activity" />
+                </td>
+            </tr> 
+            
+             <tr style="font-weight: bold; font-size: 1em; text-align: left;">
+                <td>TOTAL: </td>
+                <td>
+                    <input type = "text" id="total" />
+                </td>
+            </tr> 
+            
+        </table>
+    </form>
+</body>
+</html>
